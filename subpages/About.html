@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styleabout.css">
+    </head>
+    <body>
+<div class="container">
+    <h1>About</h1>
+</div>
+<div id="text"></div>
+<script type="text/javascript">
+    var i=0,text;
+    text = "Hi! I am 13 years old and I am a junior website developer. I go to the 8th grade of primary school and I learn languages such as: HTML, CSS, JAVASCRIPT."
+  
+    function typing() {
+      if(i<text.length){
+        document.getElementById("text").innerHTML += text.charAt(i);
+        i++;
+        setTimeout(typing,80);
+      }
+    }
+    typing();
+  </script>
+  
+
+        
+        <script src="" async defer></script>
+    </body>
+</html>
